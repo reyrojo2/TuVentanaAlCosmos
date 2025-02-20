@@ -1,11 +1,11 @@
 const audio = document.getElementById('miReproductor');
 audio.volume = 0.2;
-
+const basePath = window.location.pathname.includes('/paginas/') ? '../audio/' : 'audio/';
 const listaDeCanciones = [
-    { nombre: 'Love', archivo: '../audio/love.mp3' },
-    { nombre: 'No Gravity', archivo: '../audio/no-gravity.mp3' },
-    { nombre: 'Ray', archivo: '../audio/ray.mp3' },
-    { nombre: 'Waiting For', archivo: '../audio/waiting-for.mp3' }
+    { nombre: 'Love', archivo: basePath + 'love.mp3' },
+    { nombre: 'No Gravity', archivo: basePath + 'no-gravity.mp3' },
+    { nombre: 'Ray', archivo: basePath + 'ray.mp3' },
+    { nombre: 'Waiting For', archivo: basePath + 'waiting-for.mp3' }
 ];
 
 let indiceActual = localStorage.getItem('cancionActual') ? parseInt(localStorage.getItem('cancionActual')) : 0;
