@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema Solar - Tu ventana Al Cosmos</title>
+    <link rel="stylesheet" href="../css/tierra.css">
+    <link rel="stylesheet" href="../css/jupiter.css">
+    <link rel="stylesheet" href="../css/marte.css">
+    <link rel="stylesheet" href="../css/venus.css">
+    <link rel="stylesheet" href="../css/neptuno.css">
+    <link rel="stylesheet" href="../css/saturno.css">
+    <link rel="stylesheet" href="../css/urano.css">
+    <link rel="stylesheet" href="../css/mercurio.css">
+    <link rel="stylesheet" href="../css/sol.css">
+    <link rel="stylesheet" href="../css/carousel.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/sis_solar.css">
+    <link rel="stylesheet" href="../css/sidebar.css">
+    <link rel="icon" type="image/png" href="../imagenes/favicon.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!--Agregado-->
+            <div class="logo">
+                <img src="../imagenes/logo.png" alt="Tu Ventana Al Cosmos">
+            </div>
+            <!--Modificado-->
+            <ul>
+                <li class="audio-container">
+                    <audio id="miReproductor" controls>
+                        <source src="../audio/love.mp3" type="audio/mp3">
+                        Tu navegador no soporta el audio.
+                    </audio>
+                    <div id="nombreCancion" class="nombre-cancion">Love</div>
+                </li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="sis_solar.html">Sistema Solar</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="exploracion.html">Exploración Espacial</a></li>
+                <li><a href="tour.html">Tour Espacial</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div>
+            <video id="myvideo" autoplay muted loop class="myvideo">
+                <source src="../video/134308-759254371_medium.mp4" type="video/mp4">
+            </video>
+        </div>
+        <section class="carousel">
+            <div class="carousel-item" id="item1">
+                <div class="section-banner6">
+                </div>
+                <h3>Saturno</h3>
+            </div>
+            <div class="carousel-item" id="item2">
+                <div class="section-banner3">
+                </div>
+                <h3>Marte</h3>
+            </div>
+            <div class="carousel-item" id="item3">
+                <div class="section-banner">
+                </div>
+                <h3>La Tierra</h3>
+            </div>
+            <div class="carousel-item" id="item4">
+                <div class="section-banner8">
+                </div>
+                <h3>Mercurio</h3>
+            </div>
+            <div class="carousel-item" id="item5">
+                <div class="section-banner9"></div>
+                <h3>El Sol</h3>
+            </div>
+            <div class="carousel-item" id="item6">
+                <div class="section-banner4">
+                </div>
+                <h3>Venus</h3>
+            </div>
+            <div class="carousel-item" id="item7">
+                <div class="section-banner2">
+                </div>
+                <h3>Jupiter</h3>
+            </div>
+            <div class="carousel-item" id="item8">
+                <div class="section-banner7">
+                </div>
+                <h3>Urano</h3>
+            </div>
+            <div class="carousel-item" id="item9">
+                <div class="section-banner5">
+                </div>
+                <h3>Neptuno</h3>
+            </div>
+        </section>
+        <!--Agregado--Controles del carousel-->
+        <section class="carousel-controls">
+            <button class="carousel-control left">←</button>
+            <button class="carousel-control right">→</button>
+        </section>
+    </main>
+
+    <!-- Saturno -->
+    <aside id="info1" class="info" data-item="item1">
+        <div class="content">
+            <h2 class="title">Saturno</h2>
+            <p class="desc">Saturno es famoso por su espectacular sistema de anillos, compuestos principalmente de hielo
+                y roca. Es el segundo planeta más grande y, como Júpiter, está compuesto principalmente de hidrógeno y
+                helio.</p>
+            <h3>Datos numéricos:</h3>
+            <ul>
+                <li>Diámetro: 116.460 km</li>
+                <li>Distancia media al Sol: 1.434 millones km</li>
+                <li>Período orbital: 29.5 años terrestres</li>
+                <li>Temperatura en las nubes: -140°C</li>
+                <li>Satélites principales: Titán (el más grande)</li>
+                <li>Total de satélites conocidos: 82</li>
+            </ul>
+        </div>
+    </aside>
+    <!-- Marte -->
+    <aside id="info2" class="info" data-item="item2">
+        <div class="content">
+            <h2 class="title">Marte</h2>
+            <p class="desc">Marte, el "planeta rojo", debe su color característico al óxido de hierro presente en su
+                superficie. Posee la montaña más alta del Sistema Solar (Olympus Mons) y evidencias de agua líquida en
+                el pasado.</p>
+            <h3>Datos numéricos:</h3>
+            <ul>
+                <li>Diámetro: 6.779 km</li>
+                <li>Distancia media al Sol: 227.9 millones km</li>
+                <li>Período orbital: 687 días terrestres</li>
+                <li>Temperatura superficial: -140°C a 20°C</li>
+                <li>Satélites naturales: 2 (Fobos y Deimos)</li>
+                <li>Gravedad: 38% de la terrestre</li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Tierra -->
+    <aside id="info3" class="info" data-item="item3">
+        <div class="content">
+            <h2 class="title">La Tierra</h2>
+            <p class="desc">La Tierra es el único planeta conocido que alberga vida. Posee una atmósfera rica en
+                nitrógeno y oxígeno, grandes océanos de agua líquida y un campo magnético que nos protege de la
+                radiación solar nociva.</p>
+            <h3>Datos numéricos:</h3>
+            <ul>
+                <li>Diámetro: 12.742 km</li>
+                <li>Distancia media al Sol: 149.6 millones km</li>
+                <li>Período orbital: 365.25 días</li>
+                <li>Temperatura superficial promedio: 15°C</li>
+                <li>Satélites naturales: 1 (La Luna)</li>
+                <li>Período de rotación: 24 horas</li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Mercurio -->
+    <aside id="info4" class="info" data-item="item4">
+        <div class="content">
+            <h2 class="title">Mercurio</h2>
+            <p class="desc">Mercurio es el planeta más pequeño del Sistema Solar y el más cercano al Sol. Su superficie
+                está llena de cráteres, similar a la Luna, debido a los impactos de meteoritos y la falta de atmósfera
+                significativa.</p>
+            <h3>Datos numéricos:</h3>
+            <ul>
+                <li>Diámetro: 4.879 km</li>
+                <li>Distancia media al Sol: 57.9 millones km</li>
+                <li>Período orbital: 88 días terrestres</li>
+                <li>Temperatura superficial: -180°C a 430°C</li>
+                <li>Satélites naturales: 0</li>
+                <li>Período de rotación: 59 días terrestres</li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- El Sol -->
+    <aside id="info5" class="info" data-item="item5">
+        <div class="content">
+            <h2 class="title">El Sol</h2>
+            <p class="desc">El Sol es la estrella central del Sistema Solar y la fuente de energía que sostiene la vida
+                en la Tierra. Es una estrella de tipo G2V, conocida como una enana amarilla, que se encuentra en la
+                secuencia principal de su evolución.</p>
+            <h3>Datos numéricos:</h3>
+            <ul>
+                <li>Diámetro: 1.392.700 km (109 veces el de la Tierra)</li>
+                <li>Masa: 1.989 × 10^30 kg (333.000 veces la de la Tierra)</li>
+                <li>Temperatura superficial: 5.500°C</li>
+                <li>Temperatura del núcleo: 15 millones °C</li>
+                <li>Edad: 4.600 millones de años</li>
+                <li>Distancia a la Tierra: 149.6 millones km</li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Venus -->
+    <aside id="info6" class="info" data-item="item6">
+        <div class="content">
+            <h2 class="title">Venus</h2>
+            <p class="desc">Venus es conocido como el gemelo de la Tierra por su tamaño similar, pero es un mundo
+                infernal con una densa atmósfera de dióxido de carbono que genera un efecto invernadero extremo. Gira en
+                sentido contrario a la mayoría de los planetas.</p>
+            <h3>Datos numéricos:</h3>
+            <ul>
+                <li>Diámetro: 12.104 km</li>
+                <li>Distancia media al Sol: 108.2 millones km</li>
+                <li>Período orbital: 225 días terrestres</li>
+                <li>Temperatura superficial: 462°C (promedio)</li>
+                <li>Satélites naturales: 0</li>
+                <li>Presión atmosférica: 90 veces la de la Tierra</li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Jupiter -->
+    <aside id="info7" class="info" data-item="item7">
+        <div class="content">
+            <h2 class="title">Júpiter</h2>
+            <p class="desc">Júpiter es el planeta más grande del Sistema Solar y el primero de los gigantes gaseosos. Su
+                característica más notable es la Gran Mancha Roja, una tormenta que ha durado al menos 400 años.</p>
+            <h3>Datos numéricos:</h3>
+            <ul>
+                <li>Diámetro: 139.820 km</li>
+                <li>Distancia media al Sol: 778.5 millones km</li>
+                <li>Período orbital: 11.9 años terrestres</li>
+                <li>Temperatura en las nubes: -110°C</li>
+                <li>Satélites principales: 4 (Ío, Europa, Ganímedes, Calisto)</li>
+                <li>Total de satélites conocidos: 79</li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Urano -->
+    <aside id="info8" class="info" data-item="item8">
+        <div class="content">
+            <h2 class="title">Urano</h2>
+            <p class="desc">Urano es un gigante de hielo que gira "de lado" debido a que su eje de rotación está
+                inclinado casi 98 grados. Tiene una composición única rica en agua, amoníaco y metano que le da su color
+                azul-verdoso.</p>
+            <h3>Datos numéricos:</h3>
+            <ul>
+                <li>Diámetro: 50.724 km</li>
+                <li>Distancia media al Sol: 2.871 millones km</li>
+                <li>Período orbital: 84 años terrestres</li>
+                <li>Temperatura en las nubes: -220°C</li>
+                <li>Satélites principales: 5</li>
+                <li>Total de satélites conocidos: 27</li>
+            </ul>
+        </div>
+    </aside>
+
+    <!-- Neptuno -->
+    <aside id="info9" class="info" data-item="item9">
+        <div class="content">
+            <h2 class="title">Neptuno</h2>
+            <p class="desc">Neptuno es el último planeta del Sistema Solar y otro gigante de hielo. Posee los vientos
+                más fuertes del Sistema Solar, que pueden alcanzar velocidades de 2.100 km/h, y su característica Gran
+                Mancha Oscura.</p>
+            <h3>Datos numéricos:</h3>
+            <ul>
+                <li>Diámetro: 49.244 km</li>
+                <li>Distancia media al Sol: 4.495 millones km</li>
+                <li>Período orbital: 165 años terrestres</li>
+                <li>Temperatura en las nubes: -230°C</li>
+                <li>Satélites principales: Tritón</li>
+                <li>Total de satélites conocidos: 14</li>
+            </ul>
+        </div>
+    </aside>
+
+    <aside class="sidebar">
+        <h2>Calendario de Eventos Astronómicos</h2>
+
+        <div class="event">
+            <h3>Luna Llena</h3>
+            <p>Fecha: 25 de Febrero de 2025</p>
+            <p>Descripción: La luna estará completamente iluminada, visible toda la noche.</p>
+        </div>
+
+        <div class="event">
+            <h3>Eclipse Solar</h3>
+            <p>Fecha: 20 de Abril de 2025</p>
+            <p>Descripción: Un eclipse total de sol será visible en ciertas regiones.</p>
+        </div>
+
+        <div class="countdown">
+            <h3>Cuenta Regresiva para el Próximo Evento:</h3>
+            <p id="event-timer">00d 00h 00m 00s</p>
+        </div>
+    </aside>
+
+    <footer>
+        <h4>Síguenos:</h4>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="../imagenes/logo_fb.png" alt="Logo de FB" />
+        </a>
+        <p style="color: white">|</p>
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="../imagenes/logo_x.png" alt="Logo de X" />
+        </a>
+        <p style="color: white">|</p>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="../imagenes/logo_ig.png" alt="Logo de IG" />
+        </a>
+        <a id="footer-v1" href="nosotros.html">¿Quiénes somos?</a>
+        <h4 id="footer-v2">© 2025 Todos los derechos reservados.</h4>
+    </footer>
+    <script src="../js/sis_solar.js"></script>
+    <script src="../js/music.js"></script>
+</body>
+
+</html>

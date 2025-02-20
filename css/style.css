@@ -1,0 +1,315 @@
+/*Tamaños de letras (responsive):
+9vh para 54pt
+3vh para 18pt
+2.5vh para 15pt
+2.3vh para 12pt*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    background-color: #000000;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 10px;
+    width: 100%;
+    position: relative;
+}
+
+main a {
+    display: inline-block;
+}
+
+/* Sección superior para los botones */
+header {
+    padding: 15px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+article {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/*CSS para el vídeo de fondo*/
+.myvideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -10;
+}
+
+/*CSS para las letras h1 y h2*/
+h1 {
+    margin-bottom: 5vh;
+    color: rgb(255, 255, 255);
+    font-family: Verdana;
+    font-weight: bold;
+    font-size: 9vh;
+    text-align: center;
+    padding: 5px 60px;
+    border-radius: 15px;
+    display: inline-block;
+    /* Efecto de sombra */
+    text-shadow: 3px 3px 10px rgba(1, 29, 88, 0.849),
+        0px 0px 15px rgba(48, 34, 2, 0.911);
+}
+
+h1:hover {
+    text-shadow: 5px 5px 20px rgb(13, 80, 156),
+        0px 0px 25px rgba(236, 209, 51, 0.5);
+    transition: 0.5s ease-in-out;
+}
+
+h2 {
+    font-size: 5vh;
+    font-family: Verdana;
+    font-weight: lighter;
+    color: #ffffff;
+    margin: 0;
+    text-align: center;
+    padding: 10px 15px;
+}
+
+/*CSS para la barra de navegación*/
+
+.logo img {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 4.55vmin;
+    height: 4.55vmin;
+    aspect-ratio: 1/1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 4.55vh;
+}
+
+nav ul {
+    background-color: rgba(0, 0, 0, 0.5);
+    font-family: Verdana;
+    font-size: 2.2vh;
+    display: flex;
+    justify-content: flex-end;
+    list-style-type: none;
+    align-items: center;
+    margin-left: auto;
+    padding: 0%;
+    width: 100vw;
+    margin: 0;
+    z-index: 100;
+}
+
+nav li {
+    margin-right: 2.3vh;
+    /* Espacio entre los elementos */
+}
+
+nav a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 5px 10px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-color: #e2932b;
+    border-radius: 5px;
+    box-shadow: 0px 6px 15px rgba(226, 141, 43, 0.5);
+    transform: scale(1.05);
+}
+
+/*css para el reproductor de música*/
+
+.audio-container {
+    margin-right: auto;
+}
+
+.audio-container audio {
+    appearance: none;
+    width: 18vw;
+    height: 4.4vh;
+    border: none;
+    outline: none;
+    filter: invert(1) opacity(0.65);
+}
+
+.nombre-cancion {
+    position: absolute;
+    top: 0.6vh;
+    left: 40vh;
+    font-size: 2.5vh;
+    color: white;
+    opacity: 0;
+    transition: opacity 5s ease;
+    font-family: inherit;
+}
+
+
+/*CSS para las cartas centradas*/
+.card_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    background-size: cover;
+    background-position: center;
+    opacity: 0.5;
+}
+
+.content {
+    z-index: 1;
+    padding: 0.2vh;
+    margin: 2vh;
+    display: flex;
+    flex-direction: column;
+    height: 90%;
+}
+
+
+.card {
+    position: relative;
+    overflow: hidden;
+    max-width: 18vw;
+    border-radius: 0.5rem;
+    background-color: #00000081;
+    box-shadow: 0 1px 8px 0 rgba(226, 141, 43, 0.5);
+    border: 1px solid transparent;
+}
+
+.card a {
+    text-decoration: none
+}
+
+
+.title {
+    color: #ffffff;
+    font-family: Verdana;
+    font-size: 2.5vh;
+    font-weight: lighter;
+}
+
+.desc {
+    margin-top: 2.5vh;
+    margin-bottom: 2.5vh;
+    font-family: Verdana;
+    font-size: 2.1vh;
+    text-align: center;
+    color: #ebebeb;
+    line-height: 2.5vh;
+}
+
+/*CSS para los links*/
+.action-container {
+    margin-top: auto;
+    /* Empuja el botón hacia abajo */
+    text-align: center;
+    /* Centra el botón horizontalmente */
+    padding: 1vh 0;
+    /* Espaciado opcional */
+}
+
+.action {
+    display: inline-flex;
+    margin: 0.5vh 0.5vw 0.5vh 0.5vw;
+    color: #ffffff;
+    font-size: 2.3vh;
+    line-height: 2.5vh;
+    font-weight: 500;
+    align-items: center;
+    gap: 1vh;
+    background-color: #080911;
+    padding: 4px 8px;
+    border-radius: 0.5vh;
+    border: 0.4vh outset;
+    border-color: #100f4b;
+    transition: all 0.3s ease-in-out;
+}
+
+.action:hover {
+    background-color: #02010e;
+    box-shadow: 0px 2px 15px rgba(226, 141, 43, 0.5);
+    transform: scale(1.05);
+    z-index: 1000;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    width: 100vw;
+}
+
+footer h4 {
+    font-family: Verdana;
+    color: #ebebeb;
+    margin-right: 20px;
+    margin-left: 20px;
+    font-size: 2.3vh;
+}
+
+footer a {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+footer img {
+    width: 4.55vmin;
+    height: 4.55vmin;
+    aspect-ratio: 1/1;
+}
+
+#footer-v1 {
+    font-family: Verdana;
+    margin-left: 25vw;
+    font-size: 2.3vh;
+    font-family: Verdana;
+    color: #ebebeb;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+#footer-v2 {
+    font-family: Verdana;
+    margin-left: auto;
+    font-size: 2.3vh;
+}

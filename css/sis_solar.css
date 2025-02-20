@@ -1,0 +1,92 @@
+/*Tamaños de letras (responsive):
+9vh para 54pt
+3vh para 18pt
+2.5vh para 15pt
+2.3vh para 12pt*/
+
+.main-title {
+    text-align: center;
+    color: #ebebeb;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 2.5vh;
+    margin-right: 300pt;
+}
+
+.info {
+    position: fixed;
+    right: 20pt;
+    top: 52%;
+    transform: translateY(-50%);
+    height: 80%;
+    width: 20%;
+    background-color: #00000081;
+    border-radius: 0.5rem;
+    border: 1px solid transparent;
+    padding: 02px;
+    box-shadow: 0 1px 8px 0 rgba(226, 141, 43, 0.5);
+    z-index: 1000;
+    display: none;
+}
+
+.info.active {
+    display: block;
+}
+
+.carousel {
+    display: flex;
+    margin: auto;
+    align-items: center;
+    padding-top: 5%;
+}
+
+.carousel-item {
+    cursor: pointer;
+    height: 100vh;
+}
+
+h3 {
+    margin-top: 3vh;
+    font-size: 3vh;
+    color: #ffffff;
+}
+
+.info a {
+    text-decoration: none
+}
+
+.info .content {
+    font-family: Verdana;
+    font-size: 2.3vh;
+    color: #ebebeb;
+}
+
+.info .title {
+    text-shadow: 5px 5px 20px rgb(13, 80, 156),
+        0px 0px 25px rgba(236, 209, 51, 0.5);
+    color: #ffffff;
+    font-family: Verdana;
+    font-size: 3.5vh;
+    font-weight: bold;
+}
+
+.info .desc {
+    margin-top: 15px;
+    font-size: 2.3vh;
+    line-height: 2.3vh;
+    text-align: justify;
+}
+
+.info h3 {
+    font-family: Verdana;
+    margin-top: 10pt;
+    margin-bottom: 10pt;
+    font-size: 2.5vh;
+}
+
+.info ul {
+    font-family: Verdana;
+    margin-left: 2.3vh;
+    margin-top: 0vh;
+    margin-bottom: 10pt;
+    font-size: 2.3vh;
+}

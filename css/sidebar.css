@@ -1,0 +1,84 @@
+/*Tamaños de letras:
+3vh para 18pt
+2.5vh para 15pt
+2.3vh para 12pt*/
+
+.sidebar {
+    position: fixed;
+    box-sizing: border-box;
+    top: 5%;
+    left: 0;
+    width: 20vw;
+    height: 90vh;
+    color: white;
+    padding: 1%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    overflow-y: hidden;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+.sidebar h2 {
+    color: #fbbf24;
+    margin-bottom: 0%;
+    text-align: center;
+    font-size: 3vh;
+    /*18pt*/
+}
+
+.event {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2.5%;
+    border-radius: 8px;
+    margin-bottom: 4%;
+    margin-top: 4%;
+}
+
+.event h3 {
+    margin-top: 0%;
+    color: #0099e6;
+    font-size: 2.3vh;
+}
+
+.event p {
+    margin: 0%;
+    font-size: 2.3vh;
+    /*12pt*/
+}
+
+.add-to-calendar {
+    display: inline-block;
+    margin-top: 1%;
+    padding: 10%;
+    background: #1e40af;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+.add-to-calendar:hover {
+    background: #3b82f6;
+}
+
+.countdown {
+    background: rgba(0, 0, 0, 0.2);
+    padding: 1%;
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 0%;
+    margin-bottom: 50%;
+}
+
+.countdown h3 {
+    margin-bottom: 10px;
+    color: #ffcc00;
+    font-size: 2.3vh;
+    /*12pt*/
+}
+
+#event-timer {
+    font-size: 2.5vh;
+    /*15pt*/
+    font-weight: bold;
+}

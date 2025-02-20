@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tour Espacial - Tu Ventana al Cosmos</title>
+    <link rel="stylesheet" href="../css/style_tour.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="icon" type="image/png" href="../imagenes/favicon.png">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <!--Agregado-->
+            <div class="logo">
+                <img src="../imagenes/logo.png" alt="Tu Ventana Al Cosmos">
+            </div>
+            <!--Modificado-->
+            <ul>
+                <li class="audio-container">
+                    <audio id="miReproductor" controls>
+                        <source src="../audio/love.mp3" type="audio/mp3">
+                        Tu navegador no soporta el audio.
+                    </audio>
+                    <div id="nombreCancion" class="nombre-cancion">Love</div>
+                </li>
+                <li><a href="../index.html">Inicio</a></li>
+                <li><a href="sis_solar.html">Sistema Solar</a></li>
+                <li><a href="historia.html">Historia</a></li>
+                <li><a href="exploracion.html">Exploración Espacial</a></li>
+                <li><a href="tour.html">Tour Espacial</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="iframe-container">
+        <iframe src="https://www.solarsystemscope.com/iframe"></iframe>
+    </section>
+    <footer>
+        <h4>Síguenos:</h4>
+        <a href="https://www.facebook.com" target="_blank">
+            <img src="../imagenes/logo_fb.png" alt="Logo de FB" />
+        </a>
+        <p style="color: white">|</p>
+        <a href="https://www.twitter.com" target="_blank">
+            <img src="../imagenes/logo_x.png" alt="Logo de X" />
+        </a>
+        <p style="color: white">|</p>
+        <a href="https://www.instagram.com" target="_blank">
+            <img src="../imagenes/logo_ig.png" alt="Logo de IG" />
+        </a>
+        <a id="footer-v1" href="nosotros.html">¿Quiénes somos?</a>
+        <h4 id="footer-v2">© 2025 Todos los derechos reservados.</h4>
+    </footer>
+    <script src="../js/music.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,129 @@
+/*Tamaños de letras (responsive):
+9vh para 54pt
+3vh para 18pt
+2.5vh para 15pt
+2.3vh para 12pt*/
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.container {
+    overflow: hidden;
+    padding: 20pt;
+    margin-top: 35pt;
+    width: 95vw;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.carousel {
+    --card-width: 100%;
+    --card-max-width: 20vw;
+    --card-height: 100%;
+    --carousel-min-width: 200px;
+    z-index: 1;
+    position: relative;
+    margin: 0 auto;
+    width: 100%;
+    height: var(--card-height);
+    min-width: var(--carousel-min-width);
+    transition: filter .3s ease;
+}
+
+.carousel.smooth-return {
+    transition: all .2s ease;
+}
+
+.carousel .carousel-item {
+    background: none;
+    width: var(--card-width);
+    max-width: var(--card-max-width);
+    text-align: center;
+    padding: 1em;
+    min-width: 250px;
+    height: var(--card-height);
+    position: absolute;
+    margin: 0 auto;
+    color: rgba(0, 0, 0, .5);
+    transition: inherit;
+    border-radius: 1em;
+    filter: brightness(.9);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel-item div {
+    height: 55vmin;
+    width: 55vmin;
+    border-radius: 50%;
+    aspect-ratio: 1/1;
+    background-size: cover;
+    background-position: center;
+    transition: transform 0.3s;
+}
+
+.carousel-item:hover div {
+    transform: scale(1.1);
+}
+
+.carousel-item.highlight {
+    filter: brightness(1)
+}
+
+h2 a {
+    color: #f5b916
+}
+
+.container h3 {
+    padding-top: 15pt;
+    text-align: center;
+    text-shadow: 5px 5px 20px rgb(13, 80, 156),
+        0px 0px 25px rgba(236, 209, 51, 0.5);
+    color: #ffffff;
+    font-family: Verdana;
+    font-size: 20pt;
+    z-index: 10;
+}
+
+/* Controles del carousel */
+
+.carousel-controls {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10pt;
+    margin-right: 20pt;
+}
+
+.carousel-control {
+    display: inline-flex;
+    margin: 1vw;
+    color: #ffffff;
+    font-size: 1.5vw;
+    line-height: 1.25rem;
+    font-weight: 500;
+    align-items: center;
+    gap: 0.25rem;
+    background-color: #080911;
+    padding: 0.8vw 1.5vw;
+    border-radius: 4px;
+    border: 2px outset;
+    border-color: #100f4b;
+    transition: all 0.3s ease-in-out;
+}
+
+.carousel-control:hover {
+    background-color: #02010e;
+    box-shadow: 0px 2px 15px rgba(226, 141, 43, 0.5);
+    transform: scale(1.05);
+    z-index: 1000;
+}

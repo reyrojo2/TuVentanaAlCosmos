@@ -1,0 +1,26 @@
+/*Tamaños de letras (responsive):
+9vh para 54pt
+3vh para 18pt
+2.5vh para 15pt
+2.3vh para 12pt*/
+
+
+/* Contenedor del iframe */
+.iframe-container {
+    flex-grow: 1;
+    position: relative;
+    margin-top: 7vh;
+    z-index: 0;
+}
+
+/* Estilo del iframe */
+.iframe-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: none;
+    overflow: hidden;
+
+}
