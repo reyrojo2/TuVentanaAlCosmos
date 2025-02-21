@@ -29,6 +29,10 @@
     --card-max-width: 20vw;
     --card-height: 100%;
     --carousel-min-width: 200px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    padding-top: 5%;
     z-index: 1;
     position: relative;
     margin: 0 auto;
@@ -53,6 +57,7 @@
     position: absolute;
     margin: 0 auto;
     color: rgba(0, 0, 0, .5);
+    cursor: pointer;
     transition: inherit;
     border-radius: 1em;
     filter: brightness(.9);
