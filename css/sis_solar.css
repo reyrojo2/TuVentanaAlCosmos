@@ -32,18 +32,6 @@
     display: block;
 }
 
-.carousel {
-    display: flex;
-    margin: auto;
-    align-items: center;
-    padding-top: 5%;
-}
-
-.carousel-item {
-    cursor: pointer;
-    height: 100vh;
-}
-
 h3 {
     margin-top: 3vh;
     font-size: 3vh;
