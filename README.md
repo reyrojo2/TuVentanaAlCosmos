@@ -2,7 +2,7 @@
 
 > Un viaje interactivo a través del universo, el sistema solar y la exploración espacial.
 
-![Preview del sitio](https://github.com/reyrojo2/TuVentanaAlCosmos/imagenes/VentanaCosmos.png?raw=true)
+![Preview del sitio](https://github.com/reyrojo2/TuVentanaAlCosmos/blob/a106d8437f42f5f01b96721ada57b8be6ce38727/imagenes/VentanaCosmos.png?raw=true)
 
 ## 📄 Descripción
 
@@ -41,18 +41,18 @@ TuVentanaAlCosmos/
 └── index.html       # Página principal
 ```
 
-##🔧 Instalación y Uso Local
+## 🔧 Instalación y Uso Local
 
 Clona el repositorio:
 
-`git clone [https://github.com/reyrojo2/TuVentanaAlCosmos.git](https://github.com/reyrojo2/TuVentanaAlCosmos.git)`
+``git clone [https://github.com/reyrojo2/TuVentanaAlCosmos.git](https://github.com/reyrojo2/TuVentanaAlCosmos.git)```
 
 Abre el archivo index.html en tu navegador.
 
-##🎓 Contexto Académico
+## 🎓 Contexto Académico
 Este proyecto fue desarrollado durante el primer ciclo de la carrera en Cibertec. Sirvió para consolidar conocimientos sobre maquetación web, lógica de programación básica y la creación de interfaces de usuario funcionales sin el uso de frameworks.
 
-##👥 Equipo de Desarrollo
+## 👥 Equipo de Desarrollo
 Este proyecto fue realizado por:
 
 * Miguel Centellas
